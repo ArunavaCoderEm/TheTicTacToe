@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#logotext {
+    color: green;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+:root {
+    --gold:gold;
+    --win: #1a79a9;
+}
+
+#playerText {
+    font-size: 40px;
+    color: goldenrod;
+}
+
+.cont {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #5c3758;
+}
+
+#gamebox {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.box {
+    height: 110px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    font-size: 120px;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+}
+.box:nth-child(3n) {
+    border-right: none;
+}
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+} 
+button {
+    padding: 10px 20px;
+    margin-left: 15cm;
+    margin-top: -1cm;
+    border-radius: 10px;
+    background-color: black;
+    color: goldenrod;
+    border-color: var(--gold);
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+}
+button:hover {
+    cursor: pointer;
+    background-color: goldenrod;
+    color: black;
+    border-color: black;
+    transform: translateY(-2px);
+}
+
+.txt {
+    margin-top: 2cm;
+    color: burlywood;
+}
